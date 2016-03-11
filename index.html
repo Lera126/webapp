@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html  lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -25,6 +25,7 @@
     </header>
     <section class = "main">
         <div class = "wrapper">
+        <div class="notifications"></div>
             <div class="nav">
                 <ul>
                     <li class="nav-box">
@@ -71,15 +72,15 @@
                     </li>
                 </ul>
             </div>
-            <div class="tabs">
+            <div class="tabs" >
             <ul>
-                <li class="tab"><a href="#">Quick Reports</a></li>
-                <li  class="tab"><a href="#">My Folders</a></li>
-                <li  class="tab"><a href="#">My Team Folders</a></li>
-                <li  class="tab"><a href="#">Public Folders</a></li>
+                <li ><a href="#" class="tab active-tab" >Quick Reports</a></li>
+                <li  ><a href="#"  class="tab">My Folders</a></li>
+                <li  ><a href="#" class="tab">My Team Folders</a></li>
+                <li  ><a href="#" class="tab">Public Folders</a></li>
             </ul>
         </div>
-        <div class="quick-reports container">
+        <div id="quick-reports" class= "container">
             <div class="fill-in">
                 <ul>
                     <li>
@@ -96,6 +97,13 @@
                 <button type="submit" value="Save">Save</button>
             </div>
         </div>
+        <div id = "My-folders" class= "container hidden">
+        </div>
+        <div id = "Team-folders" class= "container hidden">
+        </div>
+        <div id="public-reports" class= "container hidden">
+        </div>
+        
     </section>
 
 
