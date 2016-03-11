@@ -23,6 +23,7 @@ var UTILS = (function () {
 		 * @param {Object} options AJAX settings
 		 */
 		ajax: function (url, options) {
+
 			var xhr = new XMLHttpRequest(),
 				method = 'GET',
 				options = UTILS.isObject(options) ? options : {};
@@ -40,6 +41,7 @@ var UTILS = (function () {
 
 				// If request finished
 				if (xhr.readyState === 4) {
+
 					status = xhr.status;
 
 					// If response is OK or fetched from cache
@@ -47,11 +49,14 @@ var UTILS = (function () {
 						var res = xhr.responseText,
 							contentType = xhr.getResponseHeader('Content-Type');
 
+
 						// If server sent a content type header, handle formats
 						if (contentType) {
+
 							// Handle JSON format
 							if (contentType === 'text/json' ||
 								contentType === 'application/json') {
+
 
 								// JSON throws an exception on invalid JSON
 								try {
@@ -63,6 +68,7 @@ var UTILS = (function () {
 										return;
 									}
 								}
+
 							// Handle XML format
 							} else if (contentType === 'text/xml' ||
 								contentType === 'application/xml') {
