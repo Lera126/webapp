@@ -1,3 +1,7 @@
+/**
+ * JS Library v2
+ */
+
 var UTILS = (function () {
 
 	return {
@@ -97,10 +101,15 @@ var UTILS = (function () {
 
 
 var pageUpdate= function(data) {
+	if (data.notifications !== undefined) {
+        document.getElementByClass("notifications").innerHTML = "<p>" + data.notifications + "</p>";
+    }
+};
+var updateTabs= function(data) {
 	
-}
+};
+
 function init () {
 	 UTILS.ajax("data/config.json",{done: pageUpdate});
-}
-
+};
 window.onLoad = init();
