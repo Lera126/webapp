@@ -3,6 +3,9 @@ body
 	width: 100%;
 	margin: 0;
 	font-family: sans-serif;
+	background-image: url("../img/body-background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 header
 {
@@ -39,9 +42,7 @@ a
 }
 .main
 {
-	background-image: url("../img/body-background.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
+
 	position: relative; 
 	width: 100%;
 	padding: 1px;
@@ -52,6 +53,7 @@ a
 	height: 30px;
 	background-color:#C0C0C0;
 	margin-top:10px;
+	padding-left: 0; 
 }
 .nav ul
 {
@@ -148,7 +150,7 @@ background-image: url("../img/icons/action-report-top.png");
 	margin-top: 10px;
 	margin-right: 10px;
 }
-.tabs ul
+.my-tabs ul
 {
 	 display: flex;
     justify-content: space-between;
@@ -160,7 +162,7 @@ background-image: url("../img/icons/action-report-top.png");
 	background-color: #F0F0F0 !important;
   color:black !important;
 }
-.tabs li
+.my-tabs li
 {
     list-style:none;
   width:20%;
@@ -187,30 +189,43 @@ background-image: url("../img/icons/action-report-top.png");
 		padding: 1px;
 		display: block;
 }
+.menu
+{
+	position: relative;
+	height: 10%
+}
 .fill-in
 {
  background-color: white; 
  position: relative;
  width: 80%;
  height: 200px;
+ margin: auto;
 
 }
 .fill-in .lable
 {
 	float: left;
 }
+.fill-in span
+{
+	float: left;
+}
 #quick-reports ul
 {
 	padding: 0;
+	position: relative;
 }
 #quick-reports li
 {
-	background-color: #888F88;
+	background-color: 	rgb(230, 230, 230);
 	width: 100%;
 	height: 30px;
 	list-style: none;
 	margin-top: 10px;
 	padding-top: 10px;
+	display: block;
+	margin-top: 1.5%;
 }
 #quick-reports li form
 {
@@ -218,9 +233,35 @@ background-image: url("../img/icons/action-report-top.png");
 }
 #quick-reports button
 {
-	float: right;
+
 }
 .hidden
 {
 	display: none;
+}
+.select-url
+{
+	float: left;
+	margin:10px;
+	width: 200px;
+	height: 20px;
+}
+.settings-btn
+{
+	float: right;
+	margin:10px;
+	
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	width: 30px;
+	height: 30px;
+}
+#quickreports-settings
+{
+	background-image: url("../img/icons/settings.png");
+}
+#expand-btn
+{
+	background-image: url("../img/icons/expand.png");
+}
 }

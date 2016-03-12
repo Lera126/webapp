@@ -1,116 +1,132 @@
-<!doctype html>
-<html  lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>WebApp</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="mobile.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/plugins.js"></script>
-    </head>
-    <header>
-        <div class="wrapper">
-            <img src="img/logo-netcraft.svg">
-            <input type="text"></input>
-        </div>
-    </header>
-    <section class = "main">
-        <div class = "wrapper">
-        <div class="notifications"></div>
-            <div class="nav">
-                <ul>
-                    <li class="nav-box">
-                        <p>Select Reporting Platform</p>
-                        <div class="choose">
-                            <p>Choose QS report</p>
-                            <div class="arrow-down"><div>
-                        </div>
-                        <div class="drop-down">
-                            <ul>
-                                <li><a href="#">Corporate</a></li>
-                                <li><a href="#">Simple</a></li>
-                                <li><a href="#">Buisness</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-box">
-                        <p>Select Dashboard</p>
-                        <div class="choose">
-                            <p>Choose QS report</p>
-                            <div class="arrow-down"><div>
-                            <div class="drop-down">
-                            <ul>
-                                <li><a href="#">Corporate</a></li>
-                                <li><a href="#">Simple</a></li>
-                                <li><a href="#">Buisness</a></li>
-                            </ul>
-                        </div>
-                        </div>
-                    </li>
-                    <li class="nav-box">
-                        <p>Help and Tutorials</p>
-                        <div class="choose">
-                            <p>Choose QS report</p>
-                            <div class="arrow-down"><div>
-                            <div class="drop-down">
-                            <ul>
-                                <li><a href="#">Corporate</a></li>
-                                <li><a href="#">Simple</a></li>
-                                <li><a href="#">Buisness</a></li>
-                            </ul>
-                        </div>
-                        </div>
-                    </li>
-                </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WebApp</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="fonts/style.css">
+	 <link rel="stylesheet" type="text/css" href="css/main.css">
+	  <script type="text/javascript" src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script type="text/javascript" src="js/vendor/jquery-1.12.0.min.js"></script>
+</head>
+<body>
+	<header>
+	 <div class="wrapper">
+                <img src="img/logo-netcraft.svg">
+                <input type="text"></input>
             </div>
-            <div class="tabs" >
-            <ul>
-                <li ><a href="#" class="tab active-tab" >Quick Reports</a></li>
-                <li  ><a href="#"  class="tab">My Folders</a></li>
-                <li  ><a href="#" class="tab">My Team Folders</a></li>
-                <li  ><a href="#" class="tab">Public Folders</a></li>
-            </ul>
-        </div>
-        <div id="quick-reports" class= "container">
-            <div class="fill-in">
-                <ul>
-                    <li>
-                        Report1 <form>Name: <input type = "text" required> Url: <input type = "text" required></form>
-                    </li>
-                    <li>
-                        Report2 <form>Name: <input type = "text" required> Url: <input type = "text" required></form>
-                    </li>
-                    <li>
-                        Report3 <form>Name: <input type = "text" required> Url: <input type = "text" required></form>
-                    </li>
+	</header>
+
+	<div class="main wrapper">
+	    <div class="notifications"></div>
+	   <div class="nav">
+                    <ul>
+                        <li class="nav-box">
+                            <p>Select Reporting Platform</p>
+                            <div class="choose">
+                                <p>Choose QS report</p>
+                                <div class="arrow-down"><div>
+                            </div>
+                            <div class="drop-down">
+                                <ul>
+                                    <li><a href="#">Corporate</a></li>
+                                    <li><a href="#">Simple</a></li>
+                                    <li><a href="#">Buisness</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-box">
+                            <p>Select Dashboard</p>
+                            <div class="choose">
+                                <p>Choose QS report</p>
+                                <div class="arrow-down"><div>
+                                <div class="drop-down">
+                                <ul>
+                                    <li><a href="#">Corporate</a></li>
+                                    <li><a href="#">Simple</a></li>
+                                    <li><a href="#">Buisness</a></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </li>
+                        <li class="nav-box">
+                            <p>Help and Tutorials</p>
+                            <div class="choose">
+                                <p>Choose QS report</p>
+                                <div class="arrow-down"><div>
+                                <div class="drop-down">
+                                <ul>
+                                    <li><a href="#">Corporate</a></li>
+                                    <li><a href="#">Simple</a></li>
+                                    <li><a href="#">Buisness</a></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+	    <div class="my-tabs" >
+	        	<ul>
+                    <li ><a href="#" class="tab active-tab" >Quick Reports</a></li>
+                    <li  ><a href="#"  class="tab">My Folders</a></li>
+                    <li  ><a href="#" class="tab">My Team Folders</a></li>
+                    <li  ><a href="#" class="tab">Public Folders</a></li>
                 </ul>
-                <button type="button" value="Cancel" class="cancel-btn">Cancel</button>
-                <button type="submit" value="Save" class="save-btn">Save</button>
+         </div>
+	        <div id="quick-reports" class= "container">
+            <div class="menu" >
+                <select class=" select-url " >
+                        <option>
+                            Choose your site
+                        </option>
+                        
+                    </select>
+
+                    <button class="settings-btn" id="quickreports-settings"></button>
+                     <button class="settings-btn" id="expand-btn"></button>
+            </div >
+                <div class="fill-in ">
+                    <ul>
+                        <li>
+                            <span>Report1</span> <form>Name: <input type = "text" required> Url: <input type = "text" required></form>
+                        </li>
+                        <li>
+                            <span>Report1</span> <form>Name: <input type = "text" required> Url: <input type = "text" required></form>
+                        </li>
+                        <li>
+                            <span>Report1</span><form>Name: <input type = "text" required> Url: <input type = "text" required></form>
+                        </li>
+                    </ul>
+                    <button type="button" value="Cancel" class="cancel-btn">Cancel</button>
+                    <button type="submit" value="Save" class="save-btn">Save</button>
+                </div>
             </div>
-        </div>
-        <div id = "My-folders" class= "container hidden">
-        </div>
-        <div id = "Team-folders" class= "container hidden">
-        </div>
-        <div id="public-reports" class= "container hidden">
-        </div>
-        
-    </section>
 
+	        <div id="my-folders" class="container hidden">
+	        	
+	        </div>
 
+	        <div id="myTeamFolders" class="container hidden">
+	        	
+		        </div>	
+		        <div class="container hidden" id="form-my-team-folders">
+		        	
+		        </div>
+		         <div class="container hidden" id="iframe-my-team-folders">
+                </div>
+	        </div>
 
+	        <div id="public-folders" class="tab-content hidden">
+		        
+	        </div>
+	    </div>
+	</div>
 
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
-
-
-
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+</body>
 </html>
