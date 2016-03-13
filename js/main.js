@@ -29,12 +29,12 @@ function btnHandle()
 	$('.cancel-btn').click(function(){
 		alert("cancel Button");
 		$('.fill-in').addClass('hidden');
-		$('.quick-reports-container').removeClass('hidden');
+		$('#reports').removeClass('hidden');
 	});
 	$('.settings-btn').click(function(){
 		alert("settings-btn Button");
 		$('.fill-in').removeClass('hidden');
-		/*$('.quick-reports-container').addClass('hidden');*/
+		$('#reports').addClass('hidden');
 	});
 
 	var saveButton = document.querySelectorAll(".save-btn");
